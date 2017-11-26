@@ -137,7 +137,7 @@
 
 		var/badcheck = 0
 		for(var/check in src.sniffFilters)
-			if(!(check in signal.data) || signal.data[check] != src.filters[check])
+			if(!(check in signal.data) || signal.data[check] != src.sniffFilters[check])
 				badcheck = 1
 				break
 		if(badcheck)
